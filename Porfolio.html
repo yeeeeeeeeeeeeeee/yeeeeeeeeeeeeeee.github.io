@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Porfolio</title>
+  <style>
+    body{
+      /* background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); */
+    }
+    .header {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: center;
+      border-bottom: 1px solid black;
+      /* box-shadow: 0 3px 10px rgb(100, 100, 100); */
+    }
+    .main-menu {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding-right: 20px;
+    }
+
+    .main-menu a {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .branding {
+      margin: 0;
+      padding-left: 10px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .main {
+      height: 300px;
+      font-size: 36px;
+    }
+
+    .bg-cover {
+      background-image: url(img/mainimg.jpg);
+      width: 100%;
+      min-height: 100%;
+      /* min-height: calc(4000/6000*100%); */
+      background-size: cover;
+      background-repeat: repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+
+    .w-content {
+      position: relative;
+    }
+
+    .wrapper {
+      margin: 20px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container {
+      background-color: white;
+      margin: 10px;
+      height: 450px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .info {
+      background-color: grey;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 40px;
+    }
+
+    .imginfo img {
+      height: 300px;
+      width: 300px;
+    }
+    .footer {
+     padding: 50px 0 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-top: 1px solid black;
+     }
+    .contact{
+      list-style-type: none;
+      display: flex;
+      align-items: flex-end;
+    } 
+    .contact a{
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <H1 class="branding">YOUK YEARAM
+    </H1>
+    <nav class="navigation">
+      <ul class="main-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="main-content">
+      <h2>HELLO!</h2>
+      <P>안녕하세요 포트폴리오입니다.</P>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="bg-cover"></div>
+    <div class="w-content">
+      <div class="container">
+        <div class="text1">멜롱</div>
+        <div class="image">
+          <!-- <img src="img/melon.jpg" alt=""> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="text2">현대카드</div>
+        <div class="image">
+          <!-- <img src="img/현대카드.jpg" alt=""> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="text3">날씨어플</div>
+        <div class="image">
+          <!-- <img src="img/날씨.png" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <div class="imginfo"><img src="img/infoimg.jpg" alt=""></div>
+    <div class="textinfo">간단한 이력</div>
+  </div>
+  <div class="footer">
+          <ul class="contact">
+            <li><a href="mailto:yeeeram@gmail.com?subject=문의사항">yeeeram@gmail.com</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Instargram</a></li>
+          </ul>
+          <small class="copyright">
+            Website design and content &copy; 2018 Yearam Youk.
+          </small>
+  </div>
+</body>
+
+</html>
