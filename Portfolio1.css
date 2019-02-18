@@ -3,93 +3,129 @@
   box-sizing: border-box;
 }
 .rwd{
-  max-width: 100%;
-  height: auto;
+  max-width: 550px;
+  height: 340px;
 }
 .text-1{
-  color: white;
+  color: rgb(56, 56, 56);
+  font-size: 26px;
+}
+.text-2{
+  color: rgb(56, 56, 56);
+  font-size: 24px;
+}
+.text-3{
+  color: rgb(56, 56, 56);
+  font-size: 14px;
 }
 .background{
-  background-color: black;
+  background-color:white;
 }
 .header {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
       align-content: center;
-      border-bottom: 1px solid black;
-      /* box-shadow: 0 3px 10px rgb(100, 100, 100); */
+      border-bottom: 1px solid rgb(180, 180, 180);
+    }
+    .header h1 {
+      font-size: 16px;
+      font-family: 'NotoSansKR';
     }
     .main-menu {
       display: flex;
       justify-content: center;
       list-style-type: none;
-      padding-right: 20px;
+      padding-right: 30px;
     }
     .main-menu a {
-      margin: 0 10px;
+      margin: 0 20px;
       text-decoration: none;
+      font-family: 'NotoSansKR';
+      font-size: 14px;
     }
     .branding {
       margin: 0;
       padding-left: 10px;
-      font-size: 20px;
       display: flex;
       align-items: center;
     }
 
     .main {
       height: 300px;
-      font-size: 36px;
-    }
-
-    .bg-cover {
-      background-color: rgb(59, 59, 59);
-      width: 100%;
-      min-height: 100%;
-      /* min-height: calc(4000/6000*100%); */
-      background-size: cover;
-      background-repeat: repeat;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .w-content {
-      position: relative;
+      font-size: 24px;
+      font-family: 'NanumGothicCoding';
       display: flex;
-      flex-direction: row;
+      align-items: center;
+      margin: 60px 0 80px 140px;
     }
     .wrapper {
       margin: 20px 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .container {
-      background-color: white;
-      margin: 10px;
-      width: 30%;
-    }
-    .container image {
-      height: 600px;
-      width: 300px;
-    }
-    .info {
-      background-color: grey;
       display: flex;
       flex-wrap: wrap;
-      margin: 20px 40px;
     }
-
-    .imginfo img {
-      height: 300px;
-      width: 300px;
+    .w-content-1 {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 0 80px;
+      justify-content: center;
     }
+    .w-content-2 {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      padding: 0 80px;
+    }
+    .container1 {
+      margin: 40px;
+    }
+    .container2 {
+      margin: 40px;
+    }
+    .container3 {
+      margin: 40px;
+    }
+    .container4 {
+      margin: 40px;
+    }
+    .text {
+      margin: 10px 20px;
+      font-family: 'NotoSansKR';
+    }
+      .dark-bg{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: black;
+    font-family: 'NotoSansKR';
+    font-size: 20px;
+  }
+  .dark-bg::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+  }
+  .dark-bg:hover:before, .dark-bg:focus::before{
+    content: "UX Design";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    border-color: black;
+  }
     .footer {
-     padding: 50px 0 20px;
+     padding: 30px 0 20px;
      display: flex;
      flex-direction: column;
      align-items: center;
-     border-top: 1px solid black;
+     border-top: 1px solid rgb(180, 180, 180);
      }
     .contact{
       list-style-type: none;
