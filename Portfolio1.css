@@ -30,7 +30,7 @@
     }
     .header h1 {
       font-size: 16px;
-      font-family: 'NotoSansKR';
+      font-family: 'Noto Sans KR', sans-serif;
     }
     .main-menu {
       display: flex;
@@ -41,8 +41,9 @@
     .main-menu a {
       margin: 0 20px;
       text-decoration: none;
-      font-family: 'NotoSansKR';
+      font-family: 'Noto Sans KR', sans-serif;
       font-size: 14px;
+      color: black;
     }
     .branding {
       margin: 0;
@@ -54,7 +55,7 @@
     .main {
       height: 300px;
       font-size: 24px;
-      font-family: 'NanumGothicCoding';
+      font-family: 'Nanum Gothic', sans-serif;
       display: flex;
       align-items: center;
       margin: 60px 0 80px 140px;
@@ -90,7 +91,7 @@
     }
     .text {
       margin: 10px 20px;
-      font-family: 'NotoSansKR';
+      font-family: 'Noto Sans KR', sans-serif;
     }
       .dark-bg{
     display: flex;
@@ -98,7 +99,7 @@
     top: 0;
     left: 0;
     color: black;
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 20px;
   }
   .dark-bg::before{
