@@ -103,6 +103,21 @@ nav#slide-menu > ul li i{
   left: 0px;
   opacity: 1;
 }
+.timeline a {
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #1A1713;
+}
+.events a {
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #1A1713;
+}
+.calendar a {
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #1A1713;
+}
 
 /*
   Content
