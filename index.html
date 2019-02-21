@@ -1,97 +1,117 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Yearam Youk</title>
-  <link rel="stylesheet" href="Portfolio1.css">
+  <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR" rel="stylesheet">
+
 </head>
 <body>
-  <div class="header">
-    <H1 class="branding">YEARAM YOUK
-    </H1>
-    <nav class="navigation">
-      <ul class="main-menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="Work.html">WORK</a></li>
-        <li><a href="About.html">ABOUT</a></li>
+
+  <!-- The example -->
+  <div class="container center">
+    <!-- Navigation -->
+    <nav id="slide-menu">
+      <ul>
+        <li class="timeline">
+          <i class="fa fa-bar-chart"></i>
+          <span class="text-1">Home</span>
+        </li>
+        <li class="events">
+          <i class="fa fa-flag"></i>
+          <span class="text-1">Works</span>
+        </li>
+        <li class="calendar">
+          <i class="fa fa-calendar-o"></i>
+          <span class="text-1">About</span>
+        </li>
       </ul>
     </nav>
-    <ul class="contact">
-      <li><a href="mailto:yeeeram@gmail.com?subject=문의사항"><img src="img/email.png" class="email" alt=""></a></li>
-      <li><a href="https://www.facebook.com/profile.php?id=100002837690182" target="_blank"><img src="img/facebook.png" class="facebook" alt=""></a></li>
-      <li><a href="https://www.instagram.com/yram_6/" target="_blank"><img src="img/instargram.png" class="instargram" alt=""></a></li>
-    </ul>
-  </div>
-  <div class="background">
-  <div class="main">
-    <div class="main-content">
-      <img src="img/main.png" alt="">
-      <!-- <h2 class="text-1">안녕하세요,</h2>
-      <h2 class="text-2">UX/UI 디자이너 육예람입니다.</h2>
-      <P class="text-3">사용자보다 한발 앞서 생각하여 효율적인 길을 안내해주는 디자이너입니다.</P>
-        <p class="text-3">디테일한 부분까지 놓치지 않고 사용자의 시각에서 서비스를 바라보며 생각을 설계하겠습니다.</P> -->
+    <!-- Content panel -->
+    <div id="content">
+      <div class="wrap">
+        <div class="menubar">
+      <div class="menu-trigger" data-anijs="if: click, do: $toggleClass menu-active, to: .container">
+        <i class="fa fa-bars"><img src="img/menu bar.png"></i>
     </div>
-  </div>
-    <div class="line-text">
-      <p class="text-3">Recent Works</p>
     </div>
-  <div class="line">
-    <img src="img/recent.png" alt="">
-  </div>
-  <div class="wrapper">
-    <div class="w-content-1">
-      <div class="container1">
-        <div class="image">
-          <a href="Hyundai.html" class="dark-bg">
-          <img src="img/hyundaicard.png" class="rwd" alt="">
-          </a>
+    <h1 class="text-1">YOUK YEA RAM</h1>
+    <nav class="navigation">
+        <ul class="main-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Work.html">WORK</a></li>
+          <li><a href="About.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div class="mainlogo">
+      
+        <ul class="contact">
+          <li><a href="mailto:yeeeram@gmail.com?subject=문의사항"><img src="img/email.png" class="email" alt=""></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100002837690182" target="_blank"><img src="img/facebook.png"
+                class="facebook" alt=""></a></li>
+          <li><a href="https://www.instagram.com/yram_6/" target="_blank"><img src="img/instargram.png" class="instargram" alt=""></a></li>
+        </ul>
         </div>
-        <!-- <div class="text">UX Design</div> -->
-      </div>
-      <div class="container2">
-        <div class="image">
-          <a href="Weather.html" class="dark-bg">
-          <img src="img/weather.png" class="rwd" alt="">
-          </a>
         </div>
-        <!-- <div class="text">UX Design</div> -->
-      </div>
-      </div>
-      <div class="w-content-2">
-      <div class="container3">
-        <div class="image">
-          <a href="Melon.html" class="dark-bg">
-          <img src="img/melon.png" class="rwd" alt="">
-          </a>
+        <div class="maintext">
+          <h1>Growing, Guide, Going with you</h1>
+          <h3 class="text-1">사용자보다 한발 앞서 먼저 생각하여 효율적인 길을 안내해주고<br> 사용자의 작은 목소리까지 놓치지 않도록 노력하겠습니다.  </h3></div>
+        <!-- <img src="img/main.png" alt=""></div> -->
+      <div class="listtitle"> 
+      <h1>Recent Projects</h1></div>
+      <!-- <p>UI interaction Library for Web Designers in plain English.</p> -->
+
+      <div class="wrapper">
+        <div class="w-content-1">
+          <div class="container1">
+            <div class="image">
+              <a href="Hyundai.html" class="dark-bg">
+                <img src="img/hyundaicard.png" class="rwd" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="container2">
+            <div class="image">
+              <a href="Weather.html" class="dark-bg">
+                <img src="img/weather.png" class="rwd" alt="">
+              </a>
+            </div>
+          </div>
         </div>
-        <!-- <div class="text">UX Design</div> -->
-      </div>
-      <div class="container4">
-        <div class="image">
-          <a href="Imcre.html" class="dark-bg">
-          <img src="img/imcre.png" class="rwd" alt="">
-          </a>
+        <div class="w-content-2">
+          <div class="container3">
+            <div class="image">
+              <a href="Melon.html" class="dark-bg">
+                <img src="img/melon.png" class="rwd" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="container4">
+            <div class="image">
+              <a href="Imcre.html" class="dark-bg">
+                <img src="img/imcre.png" class="rwd" alt="">
+              </a>
+            </div>
+          </div>
         </div>
-        <!-- <div class="text">UX Design</div> -->
       </div>
-        </div>
-      </div>
-    </div>
-  <div class="footer">
-          <!-- <ul class="contact">
-            <li><a href="mailto:yeeeram@gmail.com?subject=문의사항">yeeeram@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/in/yearam-youk-52867017a/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100002837690182" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/yram_6/" target="_blank">Instargram</a></li>
-          </ul> -->
+        <div class="footer">
           <small class="copyright">
             Website design and content &copy; 2019 Yearam Youk.
-          </small>
-  </div>
-</body>
+            </small>
+         </div>
+      </div>
 
-</html>
+
+    </div>
+  </div>
+  <!-- End example -->
+   
+ 
+
+  <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+</body>

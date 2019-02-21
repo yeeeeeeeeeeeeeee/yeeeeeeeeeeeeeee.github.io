@@ -6,180 +6,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Yearam Youk</title>
+  <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR" rel="stylesheet">
+
 </head>
-
 <style>
-  @charset "utf-8";
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  .rwd {
-    max-width: 80%;
-    height: auto;
-  }
-
-  .text-1 {
-    color: rgb(56, 56, 56);
-    font-size: 26px;
-  }
-
-  .text-2 {
-    color: rgb(56, 56, 56);
-    font-size: 24px;
-  }
-
-  .text-3 {
-    color: rgb(56, 56, 56);
-    font-size: 14px;
-  }
-
-  .background {
-    background-color: white;
-  }
-
-  .header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgb(180, 180, 180);
-    max-height: 45px;
-  }
-
-  .header h1 {
-    font-size: 14px;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
-
-  .main-menu {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding-right: 30px;
-  }
-
-  .main-menu a {
-    margin: 0 50px;
-    text-decoration: none;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
-    color: black;
-  }
-      .contact a{
-      text-decoration: none;
-    }
-    .contact img{
-      width: auto;
-      height: 22px;
-      margin: 0px 8px;
-      display: flex;
-      align-items: flex-end;
-      padding-right: 10px;
-    }
-    .email {
-      width: auto;
-      height: 20px;
-    }
-
-  .branding {
-    margin: 0;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-  }
-
-  .footer {
-    padding: 10px 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    border-top: 1px solid rgb(180, 180, 180);
-  }
-
-  .contact {
-    list-style-type: none;
-    display: flex;
-    align-items: flex-end;
-  }
-
-  /* .contact a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-  } */
-
-  .wrapper img {
+  .images img {
     margin: 20px 40px;
+    max-width: 100%;
   }
 
-  .wrapper {
+  .images {
     padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  .copyright{
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 12px;
-      color: black;
-    }
 </style>
 
 <body>
-  <div class="header">
-    <H1 class="branding">YEARAM YOUK
-    </H1>
-    <nav class="navigation">
-      <ul class="main-menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="Work.html">WORK</a></li>
-        <li><a href="About.html">ABOUT</a></li>
+
+  <!-- The example -->
+  <div class="container center">
+    <!-- Navigation -->
+    <nav id="slide-menu">
+      <ul>
+        <li class="timeline">
+          <i class="fa fa-bar-chart"></i>
+          <span class="text-1">Home</span>
+        </li>
+        <li class="events">
+          <i class="fa fa-flag"></i>
+          <span class="text-1">Works</span>
+        </li>
+        <li class="calendar">
+          <i class="fa fa-calendar-o"></i>
+          <span class="text-1">About</span>
+        </li>
       </ul>
     </nav>
-    <ul class="contact">
-      <li><a href="mailto:yeeeram@gmail.com?subject=문의사항"><img src="img/email.png" class="email" alt=""></a></li>
-      <li><a href="https://www.facebook.com/profile.php?id=100002837690182" target="_blank"><img src="img/facebook.png"
-            class="facebook" alt=""></a></li>
-      <li><a href="https://www.instagram.com/yram_6/" target="_blank"><img src="img/instargram.png" class="instargram" alt=""></a></li>
-    </ul>
-  </div>
-  <div class="wrapper">
-    <img src="porfolio img/imcre/1.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/2.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/3.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/4.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/5.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/6.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/7.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/8.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/9.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/10.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/11.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/12.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/13.png" class="rwd" alt="">
-    <img src="porfolio img/imcre/15.png" class="rwd" alt="">
-  </div>
+    <!-- Content panel -->
+    <div id="content">
+      <div class="wrap">
+        <div class="menubar">
+          <div class="menu-trigger" data-anijs="if: click, do: $toggleClass menu-active, to: .container">
+            <i class="fa fa-bars"><img src="img/menu bar.png"></i>
+          </div>
+        </div>
+        <h1 class="text-1">YOUK YEA RAM</h1>
+        <nav class="navigation">
+          <ul class="main-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Work.html">WORK</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+          </ul>
+        </nav>
+        <div class="mainlogo">
 
-  <div class="footer">
-    <!-- <ul class="contact">
-      <li><a href="mailto:yeeeram@gmail.com?subject=문의사항">yeeeram@gmail.com</a></li>
-      <li><a href="https://www.linkedin.com/in/yearam-youk-52867017a/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://www.facebook.com/profile.php?id=100002837690182" target="_blank">Facebook</a></li>
-      <li><a href="https://www.instagram.com/yram_6/" target="_blank">Instargram</a></li>
-    </ul> -->
-    <small class="copyright">
-      Website design and content &copy; 2019 Yearam Youk.
-    </small>
+          <ul class="contact">
+            <li><a href="mailto:yeeeram@gmail.com?subject=문의사항"><img src="img/email.png" class="email" alt=""></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100002837690182" target="_blank"><img src="img/facebook.png"
+                  class="facebook" alt=""></a></li>
+            <li><a href="https://www.instagram.com/yram_6/" target="_blank"><img src="img/instargram.png" class="instargram"
+                  alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="images">
+        <img src="porfolio img/imcre/1.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/2.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/3.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/4.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/5.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/6.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/7.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/8.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/9.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/10.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/11.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/12.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/13.png" class="rwd" alt="">
+        <img src="porfolio img/imcre/15.png" class="rwd" alt="">
+      </div>
+      <div class="footer">
+        <small class="copyright">
+          Website design and content &copy; 2019 Yearam Youk.
+        </small>
+      </div>
+    </div>
+
+
   </div>
+  </div>
+  <!-- End example -->
+
+
+
+  <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
 </body>
-
-</html>
