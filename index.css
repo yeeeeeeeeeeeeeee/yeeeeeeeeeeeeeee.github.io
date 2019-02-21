@@ -360,8 +360,8 @@ body a{
       flex-wrap: wrap;
     }
     .wrapper img {
-      max-width: 50vh;
-      max-height: 30vh;
+      max-width: 300px;
+      max-height: 200px;
     }
     .w-content-1 {
       display: flex;
