@@ -61,7 +61,7 @@ nav#slide-menu > ul li:before {
   font-family: "ico";
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  speak-as: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -77,7 +77,7 @@ nav#slide-menu > ul li:before {
 nav#slide-menu > ul li i{
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  speak-as: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
